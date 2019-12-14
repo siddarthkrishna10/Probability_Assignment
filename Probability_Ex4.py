@@ -5,7 +5,7 @@ from numpy import genfromtxt
 
 #Here I've edited your dataset a little; changing the X and Y cells to their respective digits
 #to calculate the Expectation of Z in a faster and simpler way. The edited sheet is in the git repo
-df = genfromtxt('C:/Users/Siddhardh/Desktop/Probablility Assignment/dsa_proba_data1.csv',
+df = genfromtxt('https://github.com/siddarthkrishna10/Probability_Assignment/blob/master/datasets/dsa_proba_data1.csv',
                 delimiter=',')
 Ez = 0
 
@@ -13,7 +13,7 @@ for i in range(1,7):
     for j in range(1,10):
         Ez += df[i][0] * df[0][j] * df[i][j]
 
-path = "C:/Users/Siddhardh/Desktop/Probablility Assignment/dsa_proba_data.xlsx"
+path = "https://github.com/siddarthkrishna10/Probability_Assignment/blob/master/datasets/dsa_proba_data.xlsx"
 df1 = pd.read_excel(path)
 df_ar = np.array(df1)
 elements = df_ar[0:, 1:]
