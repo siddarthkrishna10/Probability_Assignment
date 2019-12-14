@@ -55,8 +55,7 @@ corr = cov/(math.sqrt(vx)*math.sqrt(vy))
 print("Correlation: Corr(Z) = ", round(corr, 3))
 print("Since the correlation value isn't zero, X and Y aren't independent")
 
+#Excercie 4.4
 alpha = cov/vx
 beta = y1 - (alpha*x1)
-
-#Excercie 4.4
 print("Alpha = ", round(alpha, 3), ", Beta = ", round(beta, 3))
